@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Cavita Rounded';
+    src: url('fonts/cavita-rounded/cavitarounded-regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cavita Rounded';
+    src: url('fonts/cavita-rounded/cavitarounded-bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cavita Rounded';
+    src: url('fonts/cavita-rounded/cavitarounded-italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFF8FF;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 30px;
+}
+
+#left {
+    margin-right: auto;
+}
+
+.nav a {
+    color: rgb(51, 50, 50);
+    font-size: larger;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+
+#Info {
+    padding: 24% 8%;
+    line-height: 40px;
+}
+
+#Info a {
+    display: block;
+    text-align: left;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.vertical-text {
+    
+    position: absolute;
+    padding-top: 100px;
+    right: 0;                 
+    top: 55%;    
+    z-index: -1;              
+    transform: translateY(-50%);
+    color: #F58486;
+    writing-mode:sideways-lr ;
+    text-orientation:sideways-left;
+    font-size: 25vh;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+
+.parent {
+  display: flex;
+  padding: 20px 20px;
+  justify-content: center;
+}
+.child {
+  width: 50%;
+  background: #EFF8FF;
+  padding: 20px 20px;
+}
+
+.ContactUsForm{
+    font-size: larger;
+    font-family:'Cavita Rounded', sans-serif;
+}
+
+.textboxContact{
+    border-radius: 10px ;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+}
+
+
+form {
+    position: relative; /* Ensures button can be positioned relative to form */
+}
+
+form button {
+    display: block;
+    margin: 0 auto; /* Centers the button horizontally */
+    border-radius: 10px;
+    width: 30%;
+    height: 30px;
+    background-color: #F58486;
+    border: 0;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+}
